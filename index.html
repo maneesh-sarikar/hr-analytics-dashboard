@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <header>
@@ -22,7 +24,10 @@
 
         <section id="charts">
             <h2>Visual Insights</h2>
-            <!-- Charts will go here -->
+            <div class="chart-container">
+                <canvas id="attritionChart"></canvas>
+            </div>
+
         </section>
 
         <section id="conclusion">
@@ -30,7 +35,8 @@
             <p>Insights will be summarized here.</p>
         </section>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
