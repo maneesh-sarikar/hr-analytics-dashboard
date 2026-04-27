@@ -74,6 +74,19 @@ section p {
     margin-bottom: 10px;
     color: #e2e8f0;
 }
+/* Charts Grid */
+#charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    #charts {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Responsive Layout */
 @media (max-width: 768px) {
@@ -88,4 +101,12 @@ section p {
     .container {
         padding: 10px;
     }
+    #charts {
+    grid-template-columns: 1fr;
+}
+}
+
+ul {
+    color: #cbd5f5;
+    padding-left: 20px;
 }

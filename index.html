@@ -1,50 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HR Analytics Dashboard</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <h1>HR Analytics Dashboard</h1>
-        <p>Employee Attrition Insights</p>
+      <h1>HR Analytics Dashboard</h1>
+      <p>Employee Attrition Insights</p>
     </header>
 
     <main class="container">
-        <section id="overview">
-            <h2>Overview</h2>
-            <p>This dashboard presents key insights related to employee attrition.</p>
-        </section>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>
+          This dashboard presents key insights related to employee attrition.
+        </p>
+      </section>
 
-        <section id="charts">
-            <h2>Visual Insights</h2>
+      <section id="charts">
+        <h2>Visual Insights</h2>
 
-            <div class="chart-container">
-                <h3>Attrition Distribution</h3>
-                <canvas id="attritionChart"></canvas>
-            </div>
+        <div class="chart-container">
+          <h3>Attrition Distribution</h3>
+          <canvas id="attritionChart"></canvas>
+        </div>
 
+        <div class="chart-container">
+          <h3>Age Distribution</h3>
+          <canvas id="ageChart"></canvas>
+        </div>
 
-            <div class="chart-container">
-                <h3>Age Distribution</h3>
-                <canvas id="ageChart"></canvas>
-            </div>
+        <div class="chart-container">
+          <h3>Overtime vs Attrition</h3>
+          <canvas id="overtimeChart"></canvas>
+        </div>
+      </section>
 
-        </section>
-
-        <section id="conclusion">
-            <h2>Key Takeaways</h2>
-            <p>Insights will be summarized here.</p>
-        </section>
+      <section id="conclusion">
+        <h2>Key Takeaways</h2>
+        <ul>
+          <li>Employees working overtime show higher attrition rates.</li>
+          <li>Lower salary ranges correlate with higher attrition.</li>
+          <li>Most attrition occurs in the 30–40 age group.</li>
+        </ul>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
