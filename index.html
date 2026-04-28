@@ -9,12 +9,15 @@
   </head>
 
   <body>
+    <!-- Header Section -->
     <header>
       <h1>HR Analytics Dashboard</h1>
       <p>Employee Attrition Insights</p>
     </header>
 
+    <!-- Main Dashboard Content -->
     <main class="container">
+      <!-- Overview Section -->
       <section id="overview">
         <h2>Overview</h2>
         <p>
@@ -22,34 +25,45 @@
         </p>
       </section>
 
+      <!-- Charts Section -->
       <section id="charts">
         <h2>Visual Insights</h2>
 
+        <!-- Attrition Chart -->
         <div class="chart-container">
           <h3>Attrition Distribution</h3>
           <canvas id="attritionChart"></canvas>
         </div>
 
+        <!-- Age Chart -->
         <div class="chart-container">
           <h3>Age Distribution</h3>
           <canvas id="ageChart"></canvas>
         </div>
 
+        <!-- Overtime Chart -->
         <div class="chart-container">
           <h3>Overtime vs Attrition</h3>
           <canvas id="overtimeChart"></canvas>
         </div>
       </section>
 
+      <!-- Conclusion Section -->
       <section id="conclusion">
         <h2>Key Takeaways</h2>
         <ul>
           <li>Employees working overtime show higher attrition rates.</li>
           <li>Lower salary ranges correlate with higher attrition.</li>
-          <li>Most attrition occurs in the 30–40 age group.</li>
+          <li>Attrition is more prominent in mid-age groups.</li>
         </ul>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 HR Analytics Dashboard | Built with HTML, CSS, JS</p>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
   </body>
